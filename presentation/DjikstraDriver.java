@@ -38,6 +38,11 @@ public class DjikstraDriver {
 			}
 		}
 		g.prettyPrint();
+		System.out.println(); 
+		
+		//ADD IN START STATE AND DEST STATE
+		int start = 0, dest= 0; 
+		Djikstras d = new Djikstras(g, start, dest);
 		
 	}
 }
