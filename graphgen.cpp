@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 	if(type == "undirected"){
 		for(unsigned long i = 0; i < nodes;i++){
 			num = rand() % maxedges + 1;
-			printf("num: %lu  empspace: %lu   result: %lu\n",num,empspaces[i],num-empspaces[i]);
+			//printf("num: %lu  empspace: %lu   result: %lu\n",num,empspaces[i],num-empspaces[i]);
 			if(num - empspaces[i] <= 0 || num - empspaces[i] > nodes){num = 0;}
 			else{
 				num = num - empspaces[i];
@@ -45,7 +45,7 @@ int main(int argc, char* argv[]){
 				}	
 			}
 		}
-		printf("matrix completed\n");
+		//printf("matrix completed\n");
 		for(unsigned long i = 0; i < nodes;i++){
 			//outfile << i;
 			for(unsigned long k = 0; k < nodes;k++){
