@@ -10,4 +10,4 @@ graphgen.o: graphgen.cpp
 	
 clean: 
 	rm -rf *.o graphgen
-	rm output.txt
+	rm *.txt
