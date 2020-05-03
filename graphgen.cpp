@@ -207,9 +207,11 @@ int main(int argc, char* argv[]){
 			}
 
 		}
+		//printf("going into i loop\n");
 		for(unsigned long i = 0; i < nodes;i++){
 			//outfile << i;
 			for(unsigned long k = 0; k < nodes;k++){
+				//printf("put infile\n");
 				if(matrix[i][k] != 0){outfile << k << "," << matrix[i][k] << " ";}
 				if(comp != "complete"){if(matrix2[i][k] != 0 && matrix[i][k] == 0){outfile << k << "," << matrix2[i][k] << " ";}}
 	
