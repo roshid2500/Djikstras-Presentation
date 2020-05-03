@@ -58,7 +58,6 @@ public class Heap {
 	
 	
 	public void insert(HeapNode n) {
-		System.out.println("Here");
 		heap.add(n);
 		if(heap.size() == 1 )
 			return;

@@ -14,6 +14,7 @@ public class GraphList {
 		this.size = size; 
 		lists = new Node[size];
 		for(int i = 0; i < size; i++) {
+			//System.out.println("in for loop" + i);
 			lists[i] = new Node(i); 
 		}
 	}
@@ -24,7 +25,7 @@ public class GraphList {
 	public boolean addEdge(int vert, int dest, int weight) {
 		if(vert >= size || dest >= size)
 			return false; 
-		lists[vert].addEdge(lists[dest], lists[dest], weight);
+		lists[vert].addEdge(lists[vert], lists[dest], weight);
 		return true;
 	}
 	

@@ -18,8 +18,7 @@ public class Node {
 	 * Note this is an undirected graph 
 	 */
 	public void addEdge(Node vert, Node dest, int w) {
-		adj.put(vert, w);
-		dest.adj.put(this,w);
+		this.adj.put(dest, w);
 	}
 	
 	/*
