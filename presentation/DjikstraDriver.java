@@ -43,15 +43,16 @@ public class DjikstraDriver {
 		
 		
 		
-		g.prettyPrint();
+		//g.prettyPrint();
 		System.out.println(); 
 		
 		//ADD IN START STATE AND DEST STATE
-		int start = 0, dest= 19; 
+		int start = 0, dest= 100; 
 		
 		System.out.println("USING A HEAP");
 		long startTime2 = System.nanoTime();
 		DjikstrasHeap d1 = new DjikstrasHeap(g, start, dest);
+		System.out.println(d1.minPath());
 		long endTime2 = System.nanoTime();
 		System.out.println("time: " + (endTime2 - startTime2));
 		System.out.println(); 
@@ -60,6 +61,7 @@ public class DjikstraDriver {
 		System.out.println("USING A list");
 		long startTime = System.nanoTime();
 		DjikstrasList d = new DjikstrasList(g, start, dest);
+		System.out.println(d.minPath());
 		long endTime = System.nanoTime();
 		System.out.println("time: " + (endTime - startTime));
 		System.out.println(); 
